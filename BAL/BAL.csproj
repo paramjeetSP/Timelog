@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{372D8A13-A5A2-4676-8011-F732C12ABB65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BAL</RootNamespace>
+    <AssemblyName>BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbsenteesCount.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptAnnouncement.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Announcement.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppraisalCycle.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppraisalInterval.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentCriteria.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentRevision.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Date.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetailedLeaveStatu.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpCertification.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpDependent.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpDocument.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpEducation.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpExperience.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeRole.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpTechnicalSkill.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_GetAllDepartment_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_GetAllEmployeeDetailsById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_GetAllEmployeeProfileById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_GetAllEmployeeProfile_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_GetEmployeeLeavesStatus_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_GetUserImagePath_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_LateComing_AK_Test_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_LateComing_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Faq.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FaqCategory.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetEmployeeList_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetEmployeeRandomCode_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_AuthenticateUser_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hrms_empanniversariesalert_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_EmpBirthdayAlert_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_EmpBirthdayMonth_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hrms_EmpConfirmationAlert_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAccessEmployeeByCode_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAccessEmployeeByID_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hrms_getallabsenteesbydate_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hrms_getallappraisaldueonbymonth_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllAppraisalRating_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hrms_getallassignedemployeebyid_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllBloodGroupType_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllCalendarHoliday_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllCertification_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllDepartment_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllDesignation_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetALLEmpAcceptStatusByAnnID_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetALLEmpAcceptStatusByCOEthicsID_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllEmpDocumentById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllEmployeeBySearch_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllEmployeeDetailsById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllEmployee_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hrms_getallemptimelogstatusbydate_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllEmpType_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllExitStatusType_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllGrade_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllHeadCount_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllLeaveType_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllModule_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hrms_getallnewjoineebydate_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllRelationship_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllReportingToByGrade_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllRole_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetAllSkill_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetEmpCertificationById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetEmpDependentById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetEmpEducationById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetEmpExperienceById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetEmployeeDetail_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetEmpTechnicalSkillById_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRMS_GetIndividualEmpLoginStatusByDate_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hrms_getmodulepermissionbyroleid_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveBalance.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveOperation.cs" />
+    <Compile Include="LeavesQuota.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveStatu.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LMS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LMS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LMS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile_app_update_table.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModulePermission.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Organogram_Result.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceAppraisal.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceEvaluation.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReminderAlert.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReminderLeave.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="tbActionTaken.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbApplicationEvent.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmailFailureRecord.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmailQueue.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmployeeAddress.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmployeeAppraisalRecord.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmployeeBankAndPFRecord.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmployeeExitRecord.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmployeeRefrence.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmployeeStatusEvent.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbEmployeeStatusRecord.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AccessCardData.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AccessCardEmployees.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AccessCardEvents.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AllEmployeesCustomLeaveReport.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AllEmployeesLeaveDetails.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DI_Geo_States.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EmployeeProbationDetails.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ExceptionLogger.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_AppraisalRating.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Banks.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_BloodGroup.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_CalendarHoliday.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Certification.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Department.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Designation.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_EmploymentStatus.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_EmpType.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_ExitStatus.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Grade.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_LeaveType.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Module.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_PolicyCategory.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Relationship.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Role.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Status.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_E_Technicalskills.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_H_Employee.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_url.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbNoticePeriod.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbPolicy.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbTemplate.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_ChangeDesignation.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_DocumentType.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TL_AcceptEthics.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TL_Announcement.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TL_AnnouncementAccept.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TL_Ethics.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TL_LateComing.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TL_TimeLog.cs">
+      <DependentUpon>LMS.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="LMS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LMS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LMS.edmx.diagram">
+      <DependentUpon>LMS.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Xml.XmlNode.datasource" />
+    <None Include="Service References\ServiceReference1\timelog.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\timelog.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LMS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LMS.edmx</DependentUpon>
+      <LastGenOutput>LMS.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LMS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LMS.edmx</DependentUpon>
+      <LastGenOutput>LMS.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

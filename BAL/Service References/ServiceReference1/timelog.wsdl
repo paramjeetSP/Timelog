@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetLastTwoDaysProjectInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastTwoDaysProjectInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLastTwoDaysProjectInfoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixedBidproject">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFixedBidprojectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFixedBidprojectResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBillableProjects">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEmp_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBillableProjectsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBillableProjectsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNonBillableProjects">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEmp_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNonBillableProjectsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNonBillableProjectsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pProj_id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfilesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWorkNotes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEmp_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pProj_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pProf_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOnline" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOffline" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFixed" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pWorkNotes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComments" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pETA" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWorkNotesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddWorkNotesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWorkNotesByLogId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pLogId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEmp_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOnline" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOffline" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFixed" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pWorkNotes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWorkNotesByLogIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateWorkNotesByLogIdResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllWorkNotes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEmp_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllWorkNotesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllWorkNotesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GoToAMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEmp_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GoToAMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GoToAMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShowAmsLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEmp_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShowAmsLinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShowAmsLinkResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AllowDisallowPmLogout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AllowDisallowPmLogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AllowDisallowPmLogoutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSummaryReportForBB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSummaryReportForBBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSummaryReportForBBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetLastTwoDaysProjectInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastTwoDaysProjectInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetLastTwoDaysProjectInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastTwoDaysProjectInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFixedBidprojectSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFixedBidproject" />
+  </wsdl:message>
+  <wsdl:message name="GetFixedBidprojectSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFixedBidprojectResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBillableProjectsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBillableProjects" />
+  </wsdl:message>
+  <wsdl:message name="GetBillableProjectsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBillableProjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNonBillableProjectsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNonBillableProjects" />
+  </wsdl:message>
+  <wsdl:message name="GetNonBillableProjectsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNonBillableProjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfilesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfiles" />
+  </wsdl:message>
+  <wsdl:message name="GetProfilesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkNotesSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWorkNotes" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkNotesSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWorkNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkNotesByLogIdSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWorkNotesByLogId" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkNotesByLogIdSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWorkNotesByLogIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllWorkNotesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllWorkNotes" />
+  </wsdl:message>
+  <wsdl:message name="GetAllWorkNotesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllWorkNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GoToAMSSoapIn">
+    <wsdl:part name="parameters" element="tns:GoToAMS" />
+  </wsdl:message>
+  <wsdl:message name="GoToAMSSoapOut">
+    <wsdl:part name="parameters" element="tns:GoToAMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShowAmsLinkSoapIn">
+    <wsdl:part name="parameters" element="tns:ShowAmsLink" />
+  </wsdl:message>
+  <wsdl:message name="ShowAmsLinkSoapOut">
+    <wsdl:part name="parameters" element="tns:ShowAmsLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="AllowDisallowPmLogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:AllowDisallowPmLogout" />
+  </wsdl:message>
+  <wsdl:message name="AllowDisallowPmLogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:AllowDisallowPmLogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSummaryReportForBBSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSummaryReportForBB" />
+  </wsdl:message>
+  <wsdl:message name="GetSummaryReportForBBSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSummaryReportForBBResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastTwoDaysProjectInfoHttpGetIn">
+    <wsdl:part name="empid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastTwoDaysProjectInfoHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetFixedBidprojectHttpGetIn" />
+  <wsdl:message name="GetFixedBidprojectHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetBillableProjectsHttpGetIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBillableProjectsHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetNonBillableProjectsHttpGetIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetNonBillableProjectsHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetProfilesHttpGetIn">
+    <wsdl:part name="pProj_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProfilesHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkNotesHttpGetIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+    <wsdl:part name="pProj_id" type="s:string" />
+    <wsdl:part name="pProf_id" type="s:string" />
+    <wsdl:part name="pOnline" type="s:string" />
+    <wsdl:part name="pOffline" type="s:string" />
+    <wsdl:part name="pFixed" type="s:string" />
+    <wsdl:part name="pWorkNotes" type="s:string" />
+    <wsdl:part name="pComments" type="s:string" />
+    <wsdl:part name="pETA" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkNotesHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkNotesByLogIdHttpGetIn">
+    <wsdl:part name="pLogId" type="s:string" />
+    <wsdl:part name="pEmp_id" type="s:string" />
+    <wsdl:part name="pOnline" type="s:string" />
+    <wsdl:part name="pOffline" type="s:string" />
+    <wsdl:part name="pFixed" type="s:string" />
+    <wsdl:part name="pWorkNotes" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkNotesByLogIdHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetAllWorkNotesHttpGetIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllWorkNotesHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GoToAMSHttpGetIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GoToAMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ShowAmsLinkHttpGetIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ShowAmsLinkHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AllowDisallowPmLogoutHttpGetIn">
+    <wsdl:part name="empId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AllowDisallowPmLogoutHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSummaryReportForBBHttpGetIn">
+    <wsdl:part name="empId" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSummaryReportForBBHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastTwoDaysProjectInfoHttpPostIn">
+    <wsdl:part name="empid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastTwoDaysProjectInfoHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetFixedBidprojectHttpPostIn" />
+  <wsdl:message name="GetFixedBidprojectHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetBillableProjectsHttpPostIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBillableProjectsHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetNonBillableProjectsHttpPostIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetNonBillableProjectsHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetProfilesHttpPostIn">
+    <wsdl:part name="pProj_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProfilesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkNotesHttpPostIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+    <wsdl:part name="pProj_id" type="s:string" />
+    <wsdl:part name="pProf_id" type="s:string" />
+    <wsdl:part name="pOnline" type="s:string" />
+    <wsdl:part name="pOffline" type="s:string" />
+    <wsdl:part name="pFixed" type="s:string" />
+    <wsdl:part name="pWorkNotes" type="s:string" />
+    <wsdl:part name="pComments" type="s:string" />
+    <wsdl:part name="pETA" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddWorkNotesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkNotesByLogIdHttpPostIn">
+    <wsdl:part name="pLogId" type="s:string" />
+    <wsdl:part name="pEmp_id" type="s:string" />
+    <wsdl:part name="pOnline" type="s:string" />
+    <wsdl:part name="pOffline" type="s:string" />
+    <wsdl:part name="pFixed" type="s:string" />
+    <wsdl:part name="pWorkNotes" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkNotesByLogIdHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetAllWorkNotesHttpPostIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllWorkNotesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GoToAMSHttpPostIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GoToAMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ShowAmsLinkHttpPostIn">
+    <wsdl:part name="pEmp_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ShowAmsLinkHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AllowDisallowPmLogoutHttpPostIn">
+    <wsdl:part name="empId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AllowDisallowPmLogoutHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSummaryReportForBBHttpPostIn">
+    <wsdl:part name="empId" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSummaryReportForBBHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="TimelogSoap">
+    <wsdl:operation name="GetLastTwoDaysProjectInfo">
+      <wsdl:input message="tns:GetLastTwoDaysProjectInfoSoapIn" />
+      <wsdl:output message="tns:GetLastTwoDaysProjectInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedBidproject">
+      <wsdl:input message="tns:GetFixedBidprojectSoapIn" />
+      <wsdl:output message="tns:GetFixedBidprojectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBillableProjects">
+      <wsdl:input message="tns:GetBillableProjectsSoapIn" />
+      <wsdl:output message="tns:GetBillableProjectsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonBillableProjects">
+      <wsdl:input message="tns:GetNonBillableProjectsSoapIn" />
+      <wsdl:output message="tns:GetNonBillableProjectsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiles">
+      <wsdl:input message="tns:GetProfilesSoapIn" />
+      <wsdl:output message="tns:GetProfilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkNotes">
+      <wsdl:input message="tns:AddWorkNotesSoapIn" />
+      <wsdl:output message="tns:AddWorkNotesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkNotesByLogId">
+      <wsdl:input message="tns:UpdateWorkNotesByLogIdSoapIn" />
+      <wsdl:output message="tns:UpdateWorkNotesByLogIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkNotes">
+      <wsdl:input message="tns:GetAllWorkNotesSoapIn" />
+      <wsdl:output message="tns:GetAllWorkNotesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GoToAMS">
+      <wsdl:input message="tns:GoToAMSSoapIn" />
+      <wsdl:output message="tns:GoToAMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowAmsLink">
+      <wsdl:input message="tns:ShowAmsLinkSoapIn" />
+      <wsdl:output message="tns:ShowAmsLinkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllowDisallowPmLogout">
+      <wsdl:input message="tns:AllowDisallowPmLogoutSoapIn" />
+      <wsdl:output message="tns:AllowDisallowPmLogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryReportForBB">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the hours Report </wsdl:documentation>
+      <wsdl:input message="tns:GetSummaryReportForBBSoapIn" />
+      <wsdl:output message="tns:GetSummaryReportForBBSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TimelogHttpGet">
+    <wsdl:operation name="GetLastTwoDaysProjectInfo">
+      <wsdl:input message="tns:GetLastTwoDaysProjectInfoHttpGetIn" />
+      <wsdl:output message="tns:GetLastTwoDaysProjectInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedBidproject">
+      <wsdl:input message="tns:GetFixedBidprojectHttpGetIn" />
+      <wsdl:output message="tns:GetFixedBidprojectHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBillableProjects">
+      <wsdl:input message="tns:GetBillableProjectsHttpGetIn" />
+      <wsdl:output message="tns:GetBillableProjectsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonBillableProjects">
+      <wsdl:input message="tns:GetNonBillableProjectsHttpGetIn" />
+      <wsdl:output message="tns:GetNonBillableProjectsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiles">
+      <wsdl:input message="tns:GetProfilesHttpGetIn" />
+      <wsdl:output message="tns:GetProfilesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkNotes">
+      <wsdl:input message="tns:AddWorkNotesHttpGetIn" />
+      <wsdl:output message="tns:AddWorkNotesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkNotesByLogId">
+      <wsdl:input message="tns:UpdateWorkNotesByLogIdHttpGetIn" />
+      <wsdl:output message="tns:UpdateWorkNotesByLogIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkNotes">
+      <wsdl:input message="tns:GetAllWorkNotesHttpGetIn" />
+      <wsdl:output message="tns:GetAllWorkNotesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GoToAMS">
+      <wsdl:input message="tns:GoToAMSHttpGetIn" />
+      <wsdl:output message="tns:GoToAMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowAmsLink">
+      <wsdl:input message="tns:ShowAmsLinkHttpGetIn" />
+      <wsdl:output message="tns:ShowAmsLinkHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllowDisallowPmLogout">
+      <wsdl:input message="tns:AllowDisallowPmLogoutHttpGetIn" />
+      <wsdl:output message="tns:AllowDisallowPmLogoutHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryReportForBB">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the hours Report </wsdl:documentation>
+      <wsdl:input message="tns:GetSummaryReportForBBHttpGetIn" />
+      <wsdl:output message="tns:GetSummaryReportForBBHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TimelogHttpPost">
+    <wsdl:operation name="GetLastTwoDaysProjectInfo">
+      <wsdl:input message="tns:GetLastTwoDaysProjectInfoHttpPostIn" />
+      <wsdl:output message="tns:GetLastTwoDaysProjectInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedBidproject">
+      <wsdl:input message="tns:GetFixedBidprojectHttpPostIn" />
+      <wsdl:output message="tns:GetFixedBidprojectHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBillableProjects">
+      <wsdl:input message="tns:GetBillableProjectsHttpPostIn" />
+      <wsdl:output message="tns:GetBillableProjectsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonBillableProjects">
+      <wsdl:input message="tns:GetNonBillableProjectsHttpPostIn" />
+      <wsdl:output message="tns:GetNonBillableProjectsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiles">
+      <wsdl:input message="tns:GetProfilesHttpPostIn" />
+      <wsdl:output message="tns:GetProfilesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkNotes">
+      <wsdl:input message="tns:AddWorkNotesHttpPostIn" />
+      <wsdl:output message="tns:AddWorkNotesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkNotesByLogId">
+      <wsdl:input message="tns:UpdateWorkNotesByLogIdHttpPostIn" />
+      <wsdl:output message="tns:UpdateWorkNotesByLogIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkNotes">
+      <wsdl:input message="tns:GetAllWorkNotesHttpPostIn" />
+      <wsdl:output message="tns:GetAllWorkNotesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GoToAMS">
+      <wsdl:input message="tns:GoToAMSHttpPostIn" />
+      <wsdl:output message="tns:GoToAMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowAmsLink">
+      <wsdl:input message="tns:ShowAmsLinkHttpPostIn" />
+      <wsdl:output message="tns:ShowAmsLinkHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllowDisallowPmLogout">
+      <wsdl:input message="tns:AllowDisallowPmLogoutHttpPostIn" />
+      <wsdl:output message="tns:AllowDisallowPmLogoutHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryReportForBB">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the hours Report </wsdl:documentation>
+      <wsdl:input message="tns:GetSummaryReportForBBHttpPostIn" />
+      <wsdl:output message="tns:GetSummaryReportForBBHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TimelogSoap" type="tns:TimelogSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLastTwoDaysProjectInfo">
+      <soap:operation soapAction="http://tempuri.org/GetLastTwoDaysProjectInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedBidproject">
+      <soap:operation soapAction="http://tempuri.org/GetFixedBidproject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBillableProjects">
+      <soap:operation soapAction="http://tempuri.org/GetBillableProjects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonBillableProjects">
+      <soap:operation soapAction="http://tempuri.org/GetNonBillableProjects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiles">
+      <soap:operation soapAction="http://tempuri.org/GetProfiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkNotes">
+      <soap:operation soapAction="http://tempuri.org/AddWorkNotes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkNotesByLogId">
+      <soap:operation soapAction="http://tempuri.org/UpdateWorkNotesByLogId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkNotes">
+      <soap:operation soapAction="http://tempuri.org/GetAllWorkNotes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoToAMS">
+      <soap:operation soapAction="http://tempuri.org/GoToAMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAmsLink">
+      <soap:operation soapAction="http://tempuri.org/ShowAmsLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllowDisallowPmLogout">
+      <soap:operation soapAction="http://tempuri.org/AllowDisallowPmLogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryReportForBB">
+      <soap:operation soapAction="http://tempuri.org/GetSummaryReportForBB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TimelogSoap12" type="tns:TimelogSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLastTwoDaysProjectInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetLastTwoDaysProjectInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedBidproject">
+      <soap12:operation soapAction="http://tempuri.org/GetFixedBidproject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBillableProjects">
+      <soap12:operation soapAction="http://tempuri.org/GetBillableProjects" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonBillableProjects">
+      <soap12:operation soapAction="http://tempuri.org/GetNonBillableProjects" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiles">
+      <soap12:operation soapAction="http://tempuri.org/GetProfiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkNotes">
+      <soap12:operation soapAction="http://tempuri.org/AddWorkNotes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkNotesByLogId">
+      <soap12:operation soapAction="http://tempuri.org/UpdateWorkNotesByLogId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkNotes">
+      <soap12:operation soapAction="http://tempuri.org/GetAllWorkNotes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoToAMS">
+      <soap12:operation soapAction="http://tempuri.org/GoToAMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAmsLink">
+      <soap12:operation soapAction="http://tempuri.org/ShowAmsLink" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllowDisallowPmLogout">
+      <soap12:operation soapAction="http://tempuri.org/AllowDisallowPmLogout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryReportForBB">
+      <soap12:operation soapAction="http://tempuri.org/GetSummaryReportForBB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TimelogHttpGet" type="tns:TimelogHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetLastTwoDaysProjectInfo">
+      <http:operation location="/GetLastTwoDaysProjectInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedBidproject">
+      <http:operation location="/GetFixedBidproject" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBillableProjects">
+      <http:operation location="/GetBillableProjects" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonBillableProjects">
+      <http:operation location="/GetNonBillableProjects" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiles">
+      <http:operation location="/GetProfiles" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkNotes">
+      <http:operation location="/AddWorkNotes" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkNotesByLogId">
+      <http:operation location="/UpdateWorkNotesByLogId" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkNotes">
+      <http:operation location="/GetAllWorkNotes" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoToAMS">
+      <http:operation location="/GoToAMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAmsLink">
+      <http:operation location="/ShowAmsLink" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllowDisallowPmLogout">
+      <http:operation location="/AllowDisallowPmLogout" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryReportForBB">
+      <http:operation location="/GetSummaryReportForBB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TimelogHttpPost" type="tns:TimelogHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetLastTwoDaysProjectInfo">
+      <http:operation location="/GetLastTwoDaysProjectInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixedBidproject">
+      <http:operation location="/GetFixedBidproject" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBillableProjects">
+      <http:operation location="/GetBillableProjects" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonBillableProjects">
+      <http:operation location="/GetNonBillableProjects" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfiles">
+      <http:operation location="/GetProfiles" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkNotes">
+      <http:operation location="/AddWorkNotes" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkNotesByLogId">
+      <http:operation location="/UpdateWorkNotesByLogId" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkNotes">
+      <http:operation location="/GetAllWorkNotes" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoToAMS">
+      <http:operation location="/GoToAMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAmsLink">
+      <http:operation location="/ShowAmsLink" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllowDisallowPmLogout">
+      <http:operation location="/AllowDisallowPmLogout" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryReportForBB">
+      <http:operation location="/GetSummaryReportForBB" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Timelog">
+    <wsdl:port name="TimelogSoap" binding="tns:TimelogSoap">
+      <soap:address location="http://192.168.0.6/ams/timelog.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TimelogSoap12" binding="tns:TimelogSoap12">
+      <soap12:address location="http://192.168.0.6/ams/timelog.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TimelogHttpGet" binding="tns:TimelogHttpGet">
+      <http:address location="http://192.168.0.6/ams/timelog.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TimelogHttpPost" binding="tns:TimelogHttpPost">
+      <http:address location="http://192.168.0.6/ams/timelog.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

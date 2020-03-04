@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LMS_website", "LMS_website", "{8EB1F668-0C62-431B-B3EE-2776EF0D442A}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{372D8A13-A5A2-4676-8011-F732C12ABB65}|BAL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/LMS_website"
+		Debug.AspNetCompiler.PhysicalPath = "LMS_website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\LMS_website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/LMS_website"
+		Release.AspNetCompiler.PhysicalPath = "LMS_website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\LMS_website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2883"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL.csproj", "{372D8A13-A5A2-4676-8011-F732C12ABB65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EB1F668-0C62-431B-B3EE-2776EF0D442A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB1F668-0C62-431B-B3EE-2776EF0D442A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB1F668-0C62-431B-B3EE-2776EF0D442A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB1F668-0C62-431B-B3EE-2776EF0D442A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{372D8A13-A5A2-4676-8011-F732C12ABB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372D8A13-A5A2-4676-8011-F732C12ABB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372D8A13-A5A2-4676-8011-F732C12ABB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372D8A13-A5A2-4676-8011-F732C12ABB65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1d1cdbd6a3f8412dace4fac43b0f32d8" Name="Diagram1">
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.AbsenteesCount" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.AcceptAnnouncement" Width="1.5" PointX="5.25" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.Announcement" Width="1.5" PointX="3" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.AppraisalCycle" Width="1.5" PointX="8.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.AppraisalInterval" Width="1.5" PointX="3" PointY="46" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.AssessmentCriteria" Width="1.5" PointX="6" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.AssessmentRevision" Width="1.5" PointX="3.75" PointY="62.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.Date" Width="1.5" PointX="10.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.DetailedLeaveStatu" Width="1.5" PointX="16" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.EmpCertification" Width="1.5" PointX="21" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.EmpDependent" Width="1.5" PointX="21" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.EmpDocument" Width="1.5" PointX="21" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.EmpEducation" Width="1.5" PointX="10.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.EmpExperience" Width="1.5" PointX="10.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.Employee" Width="1.5" PointX="3" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.EmployeeRole" Width="1.5" PointX="8" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.EmpTechnicalSkill" Width="1.5" PointX="21" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.Faq" Width="1.5" PointX="26" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.FaqCategory" Width="1.5" PointX="23.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.LeaveBalance" Width="1.5" PointX="12.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.LeavesQuota" Width="1.5" PointX="16" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.LeaveStatu" Width="1.5" PointX="16" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.mobile_app_update_table" Width="1.5" PointX="12.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.ModulePermission" Width="1.5" PointX="8" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.PerformanceAppraisal" Width="1.5" PointX="6" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.PerformanceEvaluation" Width="1.5" PointX="8.25" PointY="41.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.ReminderAlert" Width="1.5" PointX="0.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.ReminderLeave" Width="1.5" PointX="18.25" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tb_ChangeDesignation" Width="1.5" PointX="3" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tb_DocumentType" Width="1.5" PointX="18.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbActionTaken" Width="1.5" PointX="8.25" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbApplicationEvent" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmailFailureRecord" Width="1.5" PointX="7.5" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmailQueue" Width="1.5" PointX="5.25" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmployeeAddress" Width="1.5" PointX="5.25" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmployeeAppraisalRecord" Width="1.5" PointX="8.25" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmployeeBankAndPFRecord" Width="1.5" PointX="8.25" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmployeeExitRecord" Width="1.5" PointX="11.25" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmployeeRefrence" Width="1.5" PointX="5.25" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmployeeStatusEvent" Width="1.5" PointX="9" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbEmployeeStatusRecord" Width="1.5" PointX="11.25" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_AccessCardData" Width="1.5" PointX="8.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_AccessCardEmployees" Width="1.5" PointX="10.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_AccessCardEvents" Width="1.5" PointX="12.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_AllEmployeesCustomLeaveReport" Width="1.5" PointX="20.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_AllEmployeesLeaveDetails" Width="1.5" PointX="13.75" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_DI_Geo_States" Width="1.5" PointX="11.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_AppraisalRating" Width="1.5" PointX="3.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Banks" Width="1.5" PointX="6" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_BloodGroup" Width="1.5" PointX="0.75" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_CalendarHoliday" Width="1.5" PointX="15.75" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Certification" Width="1.5" PointX="18.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Department" Width="1.5" PointX="0.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Designation" Width="1.5" PointX="0.75" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_EmploymentStatus" Width="1.5" PointX="0.75" PointY="33.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_EmpType" Width="1.5" PointX="0.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_ExitStatus" Width="1.5" PointX="0.75" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Grade" Width="1.5" PointX="0.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_LeaveType" Width="1.5" PointX="13.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Module" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_PolicyCategory" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Relationship" Width="1.5" PointX="18.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Role" Width="1.5" PointX="5.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Status" Width="1.5" PointX="22.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_E_Technicalskills" Width="1.5" PointX="18.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_EmployeeProbationDetails" Width="1.5" PointX="5.25" PointY="66.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_ExceptionLogger" Width="1.5" PointX="23.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_url" Width="1.5" PointX="23.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbNoticePeriod" Width="1.5" PointX="3" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbPolicy" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbTemplate" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.TL_AcceptEthics" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.TL_Announcement" Width="1.5" PointX="5.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.TL_AnnouncementAccept" Width="1.5" PointX="8" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.TL_Ethics" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.TL_LateComing" Width="1.5" PointX="23.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.TL_TimeLog" Width="1.5" PointX="17.75" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Recovered_hrmsnew_AnilModel.tbl_H_Employee" Width="1.5" PointX="23.75" PointY="20.125" IsExpanded="true" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_AcceptAnnouncement_AcceptAnnouncement" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_AcceptAnnouncement_Announcement" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_AcceptAnnouncement_Announcement1" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Grade48" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.RefAssessmentCriteria44" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.RefAssessmentRevision45" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Grade41" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_LeaveStatus_tbl_E_LeaveType71" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_LeaveStatus_tbl_E_LeaveType81" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Certification51" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Relationship40" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_EmpDocument_tb_DocumentType" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_createdby" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_Emp" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_Employee_tbl_E_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_Employee_tbl_E_EmploymentStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.fk_tb_E_Resignation" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbActionTakens_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmailQueue_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeAppraisalRecords_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeBankAndPFRecord_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeExitRecord_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeRefrences_tbEmployeeRefrences" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeStatusRecord_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbPresentAddresses_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_BloodGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_EmpType16" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_ExitStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Grade29" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Role24" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Technicalskills39" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_FaqCategory_Faq" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_LeaveType31" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_LeaveStatus_tbl_E_LeaveType" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_LeaveStatus_tbl_E_LeaveType1" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_ReminderLeave_LeaveStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Module25" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_Role26" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.RefPerformanceAppraisal43" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_AppraisalRating33" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_AppraisalRating46" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.Reftbl_E_AppraisalRating47" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tb_ChangeDesignation_tbl_E_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbActionTakens_tbEmailQueue" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmailQueue_tbApplicationEvents" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbTemplates_tbApplicationEvents" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmailFailureRecords_tbEmailQueue" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeAppraisalRecords_tbl_E_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeBankAndPFRecord_tbl_E_Banks" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeExitRecord_tbl_E_ExitStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeStatusRecord_tbEmployeeStatusEvents" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeStatusRecord_tbl_E_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeStatusRecord_tbl_E_EmpType" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeStatusRecord_tbl_E_Grade" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbEmployeeStatusRecord_tbl_E_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbNoticePeriod_tbl_E_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbl_E_PolicyCategory_tbl_E_PolicyCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_tbPolicy_tbl_E_PolicyCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.FK_TL_AcceptEthics_TL_Ethics" ManuallyRouted="false" />
+        <AssociationConnector Association="Recovered_hrmsnew_AnilModel.RefTL_Announcement2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

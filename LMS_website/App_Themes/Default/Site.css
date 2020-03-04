@@ -1,0 +1,652 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    background: #fff;
+    font-size: .80em;
+    font-family: Arial, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+/*----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    /* width: 960px;*/
+    width: 95%;
+    background-color: #fff;
+    margin: 5px auto 0px auto;
+    border: 1px solid #496077;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 64px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    clear: both;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color: #3a4f63;
+    width: 100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    z-index: 99;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+    z-index: 2;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+    z-index: 2;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline
+{
+    display: inline;
+}
+
+legend
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.heading
+{
+    height: 25px;
+    font-family: Arial,Verdana,Tahoma;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #336699;
+    margin-top: 45px;
+    clear: both;
+}
+.content
+{
+    clear: both;
+}
+.round-box
+{
+    border: 1px solid #238EC6;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    overflow: auto;
+    clear: both;
+    padding: 10px 10px;
+    background-color: #f0f0f0;
+}
+.round-box-small
+{
+    border: 1px solid #238EC6;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+    z-index: auto;
+    top: 12px;
+    left: 20px;
+    float: left;
+    background-color: #238EC6;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+.textbox
+{
+    border: #3384bf 1px solid;
+    font-size: 11px;
+    height: 18px;
+    color: #666666;
+    font-family: Verdana,Geneva,Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+.txtApplication
+{
+    font-family: Arial,Verdana,Trebuchet MS;
+    font-size: 20px;
+    color: #336699;
+    font-weight: bold;
+}
+.txt1
+{
+    font-family: Verdana,Geneva,Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.txtSmallleftmargin
+{
+    margin-left: 250px;
+    font-family: Verdana,Geneva,Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    height: 15px;
+    top: 40px;
+}
+.txtSmall
+{
+    font-size: 10px;
+    font-family: Verdana,Geneva,Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    margin-left: 140px;
+    vertical-align: top;
+}
+.textdisplaySmall
+{
+    font-size: 10px;
+    font-family: Verdana,Geneva,Arial, Helvetica, sans-serif;
+}
+.logout
+{
+    color: #0000ff;
+    font-weight: normal;
+    background-image: url(images/Logout1.png);
+    background-repeat: no-repeat;
+    padding: 0px 0px 2px 20px;
+}
+.lft
+{
+    float: left;
+}
+.rt
+{
+    float: right;
+    font-size: 11px;
+}
+.vertical-line
+{
+    width: 1px;
+    background-color: #BCBCBC;
+}
+.round-btn-small
+{
+    border: 1px solid #238EC6;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+    background-color: #F6f9fb;
+    color: #238EC6;
+    font-weight: normal;
+	font-size: 12px;
+    padding: 2px 7px;
+	text-decoration: none;
+}
+.round-btn-dark
+{
+    border: 1px solid #666666;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+    z-index: auto;
+    background-color: #666666;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+.table-heading
+{
+    color: #238EC6;
+    font-weight: normal;
+}
+.rt-heading-small
+{
+    float: right;
+    font-size: 11px;
+    font-weight: normal;
+}
+.rt-headingText-small
+{
+    float: inherit;
+    font-size: 15px;
+    font-weight: normal;
+}
+.tr
+{
+    margin: 10px;
+}
+.vtext
+{
+    font-size: 11px;
+    font-style: normal;
+    font-family: Verdana,Geneva,Arial, Helvetica, sans-serif;
+    height: 14px;
+    vertical-align: top;
+    text-align: right;
+}
+table.grid
+{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+table.grid td
+{
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-size: 12px;
+    color: #0B3861;
+}
+table.grid td, table.grid th
+{
+    padding-left: 5px;
+}
+table.grid th
+{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #238EC6;
+    text-align: left;
+}
+table.grid th > a
+{
+    text-decoration: none;
+    color: #fff;
+}
+table.grid tr:hover
+{
+    background-color: #DAE6FF;
+}
+table.nowrap td
+{
+    white-space: nowrap;
+}
+
+.error
+{
+    border: 1px solid #a00;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    width: 97%;
+    min-height: 25px;
+    background: url(images/Error.gif) #c00 no-repeat; /*url(images/Error.gif) #c00 no-repeat*/
+    display: block;
+    vertical-align: middle;
+    padding: 5px 5px 5px 30px;
+    margin-top: 5px;
+}
+.loginerror
+{
+    border: 1px solid #a00;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    width: 90%;
+    min-height: 16px;
+    background: url(images/Error.gif) #c00 no-repeat; /*url(images/Error.gif) #c00 no-repeat*/
+    display: block;
+    vertical-align: middle;
+    padding: 5px 5px 5px 30px;
+    margin-top: 5px;
+}
+.success
+{
+    border: 1px solid #0a0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #060;
+    width: 97%;
+    min-height: 25px; /*#E2F9E3 url(https://d3hqe5snu587w0.cloudfront.net/images/basecamp_sprites.png) no-repeat -475px -273px*/
+    background: url(images/allimage.png) #E2F9E3 no-repeat -475px -273px;
+    display: block;
+    vertical-align: middle;
+    padding: 5px 5px 5px 30px;
+    margin-top: 5px;
+}
+.noResize
+{
+    resize: none;
+}
+.current-page
+{
+    padding: 2px 8px;
+    background-color: #19558D;
+    background-image: -moz-linear-gradient(center bottom , #103657 0%, #1F5E91 100%);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-weight: bold;
+    border: 1px solid #E4E8F2;
+    color: #fff;
+    background-repeat: repeat-x;
+    text-decoration: none;
+}
+.paging
+{
+    text-decoration: none;
+    padding: 2px 8px;
+    background-color: #fff;
+    color: #19558D;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #E4E8F2;
+    margin-right: -4px;
+}
+.aspNetDisabled
+{
+    color: #C9CDD8;
+}
+.mandatory
+{
+    color: #FF0000;
+}
+.close
+{
+    vertical-align: top;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
+}
+.avl
+{
+    color: Green;
+    font-size: 12px;
+}
+.unAvl
+{
+    color: #f00;
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+.round-box-buttonForImage
+{
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+    background-color: #F0F0F0;
+    color: #238EC6;
+    font-weight: normal;
+    padding: 2px 5px;
+}
+
+span.Approved
+{
+    font-size: 9px;
+    font-family: Verdana;
+    color: #00a100;
+    padding: 2px; /*  background-color: #f1f1f1;border: 1px solid #BFBFBF;background-image: -moz-linear-gradient(center bottom , #E0F8EC 100% ,#f1f1f1 0%);*/
+    background-color: #E0F8EC;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    min-width: 80px;
+    border: 1px solid #00a100;
+}
+span.Pending
+{
+    font-size: 9px;
+    font-family: Verdana;
+    color: Yellow;
+    padding: 2px;
+    background-color: #A4A4A4;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    min-width: 80px;
+    border: 1px solid black;
+}
+span.Rejected
+{
+    font-size: 9px;
+    font-family: Verdana;
+    color: #f00;
+    padding: 2px;
+    background-color: #F8E0E0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    min-width: 80px;
+    border: 1px solid #f00;
+}
+span.NA
+{
+    margin-top: 5px;
+    font-size: 9px; /* color: #00a100;*/
+    color: Black;
+    padding: 2px;
+    background-color: #f1f1f1;
+    border: 1px solid #BFBFBF;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    min-width: 80px;
+}
+.ANT
+{
+    margin-top: 5px;
+    font-size: 9px; /* color: #00a100;*/
+    color: Black;
+    padding: 2px;
+    background-color: #f1f1f1;
+    border: 1px solid #BFBFBF;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    min-width: 80px;
+}
+.memo
+{
+    cursor: pointer;
+}
